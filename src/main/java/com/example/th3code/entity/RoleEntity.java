@@ -18,6 +18,8 @@ public class RoleEntity extends SuperEntity {
 
     @Column(name = "role_name", nullable = false, unique = true)
     private String roleName;
+    @Column(name = "code", length =255,nullable = false, unique = true)
+    private String code;
 
     @Column(name = "description")
     private String description;
